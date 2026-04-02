@@ -20,7 +20,10 @@
 [Retour à la page principale](../index.md)
 
 
-Jusqu'à présent (dans le [TP1](../tp1/index.md)), nous avons travaillé sur un dépôt local. Cependant, le vrai pouvoir de git est de pouvoir travailler avec un dépôt distant (généralement hébergé sur un serveur externe), ce qui présente les avantages suivants: i) avoir une copie de sauvegarde du projet, ii) possibilité d'accéder au projet depuis différentes machines et iii) possibilité de travailler en équipe sur le même projet. 
+Jusqu'à présent (dans le [TP1](../tp1/index.md)), nous avons travaillé sur un dépôt local. Cependant, le vrai pouvoir de git est de pouvoir travailler avec un dépôt distant (généralement hébergé sur un serveur externe), ce qui présente les avantages suivants : 
+>1. avoir une copie de sauvegarde du projet,
+>2. possibilité d'accéder au projet depuis différentes machines et
+>3. possibilité de travailler en équipe sur le même projet. 
 
 Dans ce TP, nous allons travailler de manière autonome (il n'y a toujours pas de travail d'équipe) sur un dépôt distant. Vous connaissez sûrement déjà certaines de ces plateformes de gestion de projets : il en existe plusieurs. **Les plus connues :**
 
@@ -32,6 +35,13 @@ Dans ce TP, nous allons travailler de manière autonome (il n'y a toujours pas d
 
 [Gitlab](https://about.gitlab.com/) :
 :    Similaire aux précédents dans sa version commerciale (Entreprise Edition). Une version open source (Community Edition) permet l’installation privée d’un serveur.
+
+---
+
+## Travail à mettre dans `dossier_exam/SAE-2-3/TP2`
+
+>1. l'ensemble des fichiers du répertoire `tp2` _(pas le répertoire `.git` !)_
+>2. ainsi qu'un PDF avec des captures d'écran des commandes utilisées
 
 ---
 
@@ -53,7 +63,7 @@ Le but de ce deuxième TP  est de commencer à travailler en autonomie (pas de t
 <a id='github'></a>
 ## 1. Créer un compte sur github 
 
-Peut-être que certains d'entre vous avez déjà un compte github. Si tel est le cas, vous pouvez ignorer cette première étape. Sinon, créer un compte sur github est simple : 
+Peut-être que certains d'entre vous avez déjà un compte github avec l'adrel universitaire. Si tel est le cas, vous pouvez ignorer cette première étape. Sinon, créer un compte sur github est simple : 
 
 1. Vous devez aller sur [github](https://github.com) et cliquer sur **sign up** pour vous insrire : 
 ![Signup github](./images/signup.png)
@@ -111,7 +121,7 @@ $ cat ~/.ssh/id_rsa.pub
 Jusqu'à présent, nous avons travaillé sur le dépôt git local `tp1`, il est temps de sauvegarder ce dépôt sur github. Pour ce faire, nous allons suivre une description qui montre comment le faire étape par étape. Mais tout d'abord, il est pratique de faire une brève introduction de trois commandes dans git qui nous aideront à gérer notre répertoire distant à partir de notre répertoire local sur la ligne de commande. 
 
 * `git remote` :
-: cette commande sert à gérer (ajouter) des dépôts distants ("remotes"). En d'autres termes, nous utiliserons cette commande pour créer un lien entre notre dépôt local `tp1` et celui distant que nous allons créer dans github. 
+: cette commande sert à gérer (ajouter) des dépôts distants ("remote"). En d'autres termes, nous utiliserons cette commande pour créer un lien entre notre dépôt local `tp1` et celui distant que nous allons créer dans github. 
 
 * `git push` :
 : cette commande permet de mettre à jour le dépôt distant (e.g. github) à partir de la dernière version validée (_commit)_ de notre dépôt local. 
@@ -186,7 +196,7 @@ Branch master set up to track remote branch master from origin.
 
 Dans le [tp1](../tp1/index.md), nous avons vu comment établir une séquence de travail simple dans un répertoire local pour enregistrer la trace des différentes versions de notre projet à l'aide de la séquence de commandes suivant : `git status` -> `git add fichier` -> `git commit -m "message"` -> `git status` -> `git add fichier` -> `...`
 
-Une fois que le lien entre notre dépôt local et distant a été établi, nous allons introduire les commandes `git pull` et` git push` dans cette séquence et ainsi pouvoir synchroniser le _commit_ local avec le dépôt distant . En bref, cette séquence se compose des commandes suivantes :
+Une fois que le lien entre notre dépôt local et distant a été établi, nous allons introduire les commandes `git pull` et` git push` dans cette séquence et ainsi pouvoir synchroniser le _commit_ local avec le dépôt distant. En bref, cette séquence se compose des commandes suivantes :
 
 
 
@@ -220,11 +230,11 @@ $:~/courseGIT/tp1> git push
 >1. Modifiez le fichier Cryptomonnaie.java avec le code ci-dessous. Pour synchroniser correctement les dépôts, commencez par faire un `git pull` ->` git log`, puis modifiez le fichier pour ensuite continuez avec la sequence `git status` ->` git add Cryptomonnaie.java` -> `git commit -m" Ajout de getters et setters "` - > `git push`. Vérifiez que le référentiel github a été mis à jour. 
 
 ```java
-public class Cryptomonnaie{
+public class Cryptomonnaie {
     private String nom;
     private double valeurDeJeton; // Imaginons en euros
 
-    public Cryptomonnaie(String nom, double valeurDeJeton){
+    public Cryptomonnaie(String nom, double valeurDeJeton) {
         this.nom = nom;
         this.valeurDeJeton = valeurDeJeton;
     }
