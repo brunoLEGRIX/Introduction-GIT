@@ -3,6 +3,11 @@
 [Retour à la page principale](../index.md)
 
 Pour notre premier contact avec git, nous n'aurons besoin que d'un éditeur de texte et d'une installation fonctionnelle de git sur la console. Il ne sera pas nécessaire d'avoir un dépôt distant (comme github) parce que nous ferons tout le travail sur un répertoire locale de la machine. Dans la dernière partie de ce TP, nous commencerons à gérer un petit programme Java, il est donc également pratique d'avoir une machine virtuelle Java installée. Ce travail pratique suppose que nous travaillons sous linux bien qu'il ne devrait pas y avoir aucun problème à le faire sur d'autres plates-formes. 
+
+## Travail à mettre dans `dossier_exam/SAE-2-3/TP1`
+
+>1. l'ensemble des fichiers créés
+>2. ainsi qu'un PDF avec des captures d'écran des commandes utilisées
  
 ## Objectifs du TP 1
 
