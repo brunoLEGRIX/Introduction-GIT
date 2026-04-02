@@ -127,7 +127,7 @@ Test CryptoMarche capitalMonneaie        ... FAIL
      * @param proprietare
      * @return capital en euros du propriétare.
      */
-    public double capitalEnEuros(String proprietaire){
+    public double capitalEnEuros(String proprietaire) {
         /**
 			FONCTION À IMPLEMENTER
         **/
@@ -141,7 +141,7 @@ Test CryptoMarche capitalMonneaie        ... FAIL
      * @param monnaie
      * @return capital total en circulation de la cryptomonnaie (en euros).
      */
-    public double capitalMonneaie(Cryptomonnaie monnaie){
+    public double capitalMonneaie(Cryptomonnaie monnaie) {
         /**
 			FONCTION À IMPLEMENTER
         **/
@@ -164,7 +164,7 @@ Test CryptoMarche capitalMonneaie        ... FAIL
    * @param montantJetons
    * @return true si la transaction a été effectuée, false sinon.  
    */
-  public boolean transfertDevise (Portefeuille destination, double montantJetons){
+  public boolean transfertDevise (Portefeuille destination, double montantJetons) {
       /**
            FONCTION À IMPLEMENTER
 	  **/
@@ -178,7 +178,7 @@ Test CryptoMarche capitalMonneaie        ... FAIL
    * @param montantEuros Valeur d'achat en euros 
    * @return true si le montant en euros est supérieur ou égal à 0 
    */
-  public boolean achatDevise (double montantEuros){
+  public boolean achatDevise (double montantEuros) {
 	/**
            FONCTION À IMPLEMENTER
 	**/
@@ -202,7 +202,7 @@ Test CryptoMarche capitalMonneaie        ... OK
 
 
 <a id='branch'></a>
-## 3. Gérer des nouvelles fonctionnalités à l'aide des s
+## 3. Gérer des nouvelles fonctionnalités à l'aide des branches
 
 Après avoir lancé le projet commun de marché de la crypto-monnaie, <mark style="background-color:red;font-weight:bold; color:white">Athos</mark>  et <mark style="background-color:green;font-weight:bold; color:white">Porthos</mark> décident de s'attaquer à de nouveaux projets séparément. En particulier, chacun d'eux décide de lancer sa propre crypto-monnaie, respectivement : la **AthosCoin** et la **PorthosCoin**.  Afin d'intégrer ces devises dans le marché existant, nous allons utiliser **le concept de branches git.** 
 
