@@ -4,11 +4,17 @@
 
 Il est temps de commencer à utiliser git pour le travail d'équipe. En fait, git a été initialement conçu dans ce but et c'est là qu'il peut nous montrer sa puissance. 
 
-Avant de continuer, nous allons nous organiser en binômes. Si vous êtes un nombre impair, un équipe peut être composé de trois personnes malgré le TP est conçu pour deux roles. 
+Avant de continuer, nous allons nous organiser en binômes. Si vous êtes un nombre impair, un équipe peut être composé de trois personnes même si le TP a été conçu pour deux rôles.
 
 **Êtes-vous déjà constitué en équipe ?** Lancez une pièce et décidez qui assumera le rôle de <mark style="background-color:red;font-weight:bold; color:white">Athos</mark> et qui assumera le rôle de <mark style="background-color:green;font-weight:bold; color:white">Porthos</mark> pour ce travail pratique. Si vous êtes trois, deux personnes seront regroupées dans le rôle d'<mark style="background-color:red;font-weight:bold; color:white">Athos</mark>.
 
- 
+---
+
+## Travail à mettre dans `dossier_exam/SAE-2-3/TP3`
+
+>1. l'ensemble des fichiers du répertoire tp3 (pas le répertoire .git !)
+>2. ainsi qu'un PDF avec des captures d'écran des commandes utilisées
+
 ---
 
 ## Objectifs du TP 3
