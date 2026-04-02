@@ -202,7 +202,7 @@ Test CryptoMarche capitalMonneaie        ... OK
 
 
 <a id='branch'></a>
-## 3. Gérer des nouvelles fonctionnalités à l'aide des branches
+## 3. Gérer des nouvelles fonctionnalités à l'aide des s
 
 Après avoir lancé le projet commun de marché de la crypto-monnaie, <mark style="background-color:red;font-weight:bold; color:white">Athos</mark>  et <mark style="background-color:green;font-weight:bold; color:white">Porthos</mark> décident de s'attaquer à de nouveaux projets séparément. En particulier, chacun d'eux décide de lancer sa propre crypto-monnaie, respectivement : la **AthosCoin** et la **PorthosCoin**.  Afin d'intégrer ces devises dans le marché existant, nous allons utiliser **le concept de branches git.** 
 
@@ -336,8 +336,8 @@ $:~/courseGIT/tp3> ls
 3. Chacun de vous va créer une branche appelée **AthosCoin** et **PorthosCoin** respectivement. Dans cette branche, vous allez créer votre crypto-monnaie (suivez l'exemple d'AramisCoin ci-dessous). Une fois la devise créée, fusionnez la branche avec la branche principale. Assurez-vous ensuite que les modifications sont synchronisées dans le dépôt github. 
 
 ```java
-public class AramisCoin extends Cryptomonnaie{
-    public AramisCoin(){
+public class AramisCoin extends Cryptomonnaie {
+    public AramisCoin() {
         super("ARA", 1000);
     }
 }
