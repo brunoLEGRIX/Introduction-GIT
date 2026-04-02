@@ -2,11 +2,11 @@
 
 <mark style="background-color:yellow;text-align:center">
 	<b>
-	...Prenez 10 minutes à lire ce introduction...
+	...Prenez 10 minutes à lire cette introduction...
 	</b>
 </mark>
 
-[Git](https://git-scm.com/) est un outil de **gestion de version open source**   initialement conçu par [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds) pour la maintenance du noyau Linux qui est devenu un système standard pour le travail de groupe. Bien que nous ne devons pas oublier qu'il existe d'autres systèmes de gestion de version (par exemple, subversion ou mercurial), git est aujourd'hui l'outil de gestion de version le plus utilisé. Ce cours ne prétend pas entrer dans les fondements théoriques de git ou dans des notions avancées: il s'agit essentiellement d'une introduction pratique dans laquelle dans 10 minutes nous serons en mesure de créer notre premier dépôt git. 
+[Git](https://git-scm.com/) est un outil de **gestion de version open source**   initialement conçu par [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds) pour la maintenance du noyau Linux, qui est devenu un système standard pour le travail de groupe. Bien que nous ne devons pas oublier qu'il existe d'autres systèmes de gestion de version (par exemple : subversion ou mercurial), git est aujourd'hui l'outil de gestion de version le plus utilisé. Ce cours ne prétend pas entrer dans les fondements théoriques de git ou dans des notions avancées : il s'agit essentiellement d'une introduction pratique avec laquelle on sera en mesure de créer un premier dépôt git, dans 10 minutes. 
 
 Le lecteur intéressé peut se référer à des manuels plus complets sur git, comme le livre [Pro Git book](http://git-scm.com/book) par Scott Chacon ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)) ou [ce cours en ligne](https://pigne.org/teaching/general/lecture/Gestion-de-version-travail-en-equipe) ([CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)) dont ce cours est en partie inspiré. 
 
@@ -21,14 +21,14 @@ Plus précisément, nous aurons besoin de :
    * Vous pouvez télécharger git [ici pour différentes plates-formes](https://git-scm.com/downloads)
    * Installation de git sur ubuntu : `sudo apt-get update; sudo apt-get install git `
    * [Installation de git sur windows 10](https://www.develves.net/blogs/asd/articles/using-git-with-powershell-on-windows-10/#installing-git)
-3. Une machine virtuelle Java[^1]
-4. Pour le [TP 2](./tp2/index.md), [TP 3](./tp3/index.md),  [TP 4](./tp4/index.md) et [TP 5](./tp5/index.md) une compte sur [github](https://github.com/)
+3. Une machine virtuelle Java([^1])
+4. Pour les [TP 2](./tp2/index.md), [TP 3](./tp3/index.md),  [TP 4](./tp4/index.md) et [TP 5](./tp5/index.md) une compte sur [github](https://github.com/)
 
 [^1]: La machine virtuelle Java n'est pas nécessaire pour git mais pour les exercices proposés.
 
 ## Travaux pratiques 
 
-Ce cours d'[introduction à la gestion des versions à l'aide de GIT](#introduction_main)  est divisé en quatre séances pratiques :
+Ce cours d'[introduction à la gestion des versions à l'aide de GIT](#introduction_main)  est divisé en cinq TP (travaux pratiques) :
 
 >* [TP 1 : Travailler sur un répertoire local ](./tp1/index.md)
 >* [TP 2 : Travailler en autonomie sur un depôt github distant ](./tp2/index.md) 
