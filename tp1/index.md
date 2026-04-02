@@ -2,18 +2,18 @@
 # TP 1 : Travailler sur un répertoire local 
 [Retour à la page principale](../index.md)
 
-Pour notre premier contact avec git, nous n'aurons besoin que d'un éditeur de texte et d'une installation fonctionnelle de git sur la console. Il ne sera pas nécessaire d'avoir un dépôt distant (comme github) parce que nous ferons tout le travail sur un répertoire locale de la machine. Dans la dernière partie de ce TP, nous commencerons à gérer un petit programme Java, il est donc également pratique d'avoir une machine virtuelle Java installée. Ce travail pratique suppose que nous travaillons sous linux bien qu'il ne devrait y avoir aucun problème à le faire sur d'autres plates-formes. 
+Pour notre premier contact avec git, nous n'aurons besoin que d'un éditeur de texte et d'une installation fonctionnelle de git sur la console. Il ne sera pas nécessaire d'avoir un dépôt distant (comme github) parce que nous ferons tout le travail sur un répertoire locale de la machine. Dans la dernière partie de ce TP, nous commencerons à gérer un petit programme Java, il est donc également pratique d'avoir une machine virtuelle Java installée. Ce travail pratique suppose que nous travaillons sous linux bien qu'il ne devrait pas y avoir aucun problème à le faire sur d'autres plates-formes. 
  
 ## Objectifs du TP 1
 
 Le but de ce premier TP est de commencer à se familiariser avec git. Plus précisément, nous allons apprendre: 
 
->1. [Configuration de GIT (`git config`)](#configuration)
-2. [Création d'un dépôt git sur une machine locale (`git init` et `git status`)](#gitinit)
-3. [Création d'un fichier texte README.md](#readme)
+>1. [la configuration de GIT (`git config`)](#configuration)
+2. [la création d'un dépôt git sur une machine locale (`git init` et `git status`)](#gitinit)
+3. [la création d'un fichier texte README.md](#readme)
    * [Gérer les différentes modifications du fichier README.md](#readmeModifications)
    * [Différencier  3 états / 3 zones / 3 actions](#readmeEtatsZonesActions)
-4. [Gestion de version d'un programme Java](#programmeJava)
+4. [la gestion de version d'un programme Java](#programmeJava)
    * [Creation du fichier `.gitignore`](#gitignore)
 
 ---
@@ -43,7 +43,7 @@ merge.tool=...
 
 ### 1.1. Votre identité
 
-La première chose à faire lorsque vous installez git est de définir votre nom d'utilisateur et votre adresse e-mail. Ceci est important car chaque commit git utilise ces informations, et elles sont immuablement intégrées dans les commits que vous commencez à créer: 
+La première chose à faire lorsque vous installez git est de définir votre nom d'utilisateur et votre adresse e-mail. Ceci est important car chaque commit git utilise ces informations, et elles sont immuablement intégrées dans les commits que vous commencez à créer _(si vous vous nommez John Doe)_: 
 
 ```shell
 $:> git config --global user.name "John Doe"
@@ -72,7 +72,7 @@ $:> git config --global init.defaultBranch main
 -->
 
 ### Exercices
-> 1. Suivez les étapes précédentes et configurez votre nom, votre adresse e-mail et votre éditeur de texte dans git. 
+> 1. Suivez les étapes précédentes et configurez votre nom, votre adrel universitaire et votre éditeur de texte dans git. 
 2. Tapez la commande `git config --list` et assurez-vous que toutes les informations fournis sont correctes.
 3. Afin de vérifier que votre nom est correct, tapez  `git config user.name`
 4. Faire pareil pour votre email, tapez  `git config user.email`
@@ -160,9 +160,9 @@ Utilisez votre éditeur de texte préféré pour cela et commencez à éditer le
 
 **Groupe :** Votre groupe
 
-**Année :**
+**Année :** 2025-2026
 
-**IUT Le Havre - Cours GIT**
+**IUT Le Havre - SAÉ 2.03**
 
 ### Compte-rendu TP1 Introduction GIT
 
@@ -209,11 +209,11 @@ Changes to be committed:
 	new file:   README.md
 ```
 
-Vous pouvez voir que le fichier vient d'être sélectioné pour être inclus dans le dépôt git et qu'il ne reste plus qu'à valider cette inclusion. Pour cela, nous utilisons la commande `git commit`. Tapez :
+Vous pouvez voir que le fichier vient d'être sélectionné pour être inclus dans le dépôt git et qu'il ne reste plus qu'à valider cette inclusion. Pour cela, nous utilisons la commande `git commit`. Tapez :
 
 ```shell
-$:> git commit -m "Ajoute du fichier README.md"
-[master (root-commit) 23782d5] Ajoute du fichier README.md
+$:> git commit -m "Ajout du fichier README.md"
+[master (root-commit) 23782d5] Ajout du fichier README.md
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 README.md
 ```
@@ -228,22 +228,22 @@ nothing to commit, working directory clean
 <a id='sequencelocal'></a>
 **Important :** ce que nous venons d'apprendre est **la séquence simple pour suivre les changements d'un fichier dans git** qui comprend les étapes suivantes :
 
-1. Modification d'un fichier existant ou création d'un nouveau fichier.
-2. `git status` pour voir les fichiers à inclure dans le dépôt git.
-3. `git add <fichier>` pour sélectioner le fichier (_stage_) que nous voulons suivre dans le dépôt git.
-4. `git commit -m "Ajoutez ici un petit commentaire pour décrire ce commit"` pour valider/enregistrer les changements dans le dépôt git.
+1. la modification d'un fichier existant ou la création d'un nouveau fichier.
+2. la commande `git status` pour voir les fichiers à inclure dans le dépôt git.
+3. la commande `git add <fichier>` pour sélectioner le fichier (_stage_) que nous voulons suivre dans le dépôt git.
+4. la commande `git commit -m "Ajoutez ici un petit commentaire pour décrire ce commit"` pour valider/enregistrer les changements dans le dépôt git.
 5. Enfin, la commande `git log` nous permet de voir toutes les différentes versions enregistrés dans notre dépôt.  Tapez `git log` pour voir le journal des différentes versions. Chaque entrée du log correspond à une version différent du fichier validée (_commit_). 
 
 <a id='readmeEtatsZonesActions'></a>
 ### 3.2. Différencier  3 états / 3 zones / 3 actions
 
-Pour mieux comprendre le fonctionnement de git, c'est interessant de distinguer la difference entre état, zone et action. Voici un petit résumé :
+Pour mieux comprendre le fonctionnement de git, c'est intéressant de distinguer la différence entre état, zone et action. Voici un petit résumé :
 
 **Dans un dépôt GIT un fichier peut avoir 3 états différents :**
 
-   * Modifié (modified): il a des modification locales, il va falloir le sélectionner (stage) pour ensuite valider (commit) ses modifications.
-   * Sélectionné (staged): ses modification ont été sélectionnées (staged) pour être validées (commited).
-   * Validé (commited): il est synchrone avec le dépôt et ne requière pas de validation.
+   * Modifié (modified) : il a des modifications locales, il va falloir le sélectionner (stage) pour ensuite valider (commit) ses modifications.
+   * Sélectionné (staged) : ses modifications ont été sélectionnées (staged) pour être validées (commited).
+   * Validé (commited) : il est synchrone avec le dépôt et ne requière pas de validation.
 
 **Ces états correspondent à 3 zones dans un GIT :**
 
@@ -253,8 +253,8 @@ Pour mieux comprendre le fonctionnement de git, c'est interessant de distinguer 
 
 **Le passage entre ses 3 états se fait par 3 actions:**
 
-   * Sélection (stage) qui sélectionne les fichier pour la validation(commande : `git add`).
-   * Validation (commit) qui crée le commit et l’envoie dans le dépôt (commande: `git commit`).
+   * Sélection (stage) qui sélectionne les fichiers pour la validation (commande : `git add`).
+   * Validation (commit) qui crée le commit et l’envoie dans le dépôt (commande : `git commit`).
    * Récupération (checkout) qui récupère un instantané (snapshot) depuis le dépôt vers la copie de travail (commande : `git checkout`). Nous verrons cette commande plus tard.
 
 
@@ -268,7 +268,7 @@ Pour mieux comprendre le fonctionnement de git, c'est interessant de distinguer 
 <a id='programmeJava'></a>
 ## 4. Gestion de version d'un programme Java 
 
-Bien que git permette la gestion des versions de tout type de fichier (par exemple, c'est le cas du fichier texte README.md), la plupart du temps nous allons l'utiliser pour gérer les versions d'un programme. Dans cet exercice pratique, nous allons créer un petit projet Java sur le monde fascinant des crypto-monnaies.
+Bien que git permette la gestion des versions de tout type de fichier (par exemple : c'est le cas du fichier texte README.md), la plupart du temps nous allons l'utiliser pour gérer les versions d'un programme. Dans cet exercice pratique, nous allons créer un petit projet Java sur le monde fascinant des crypto-monnaies.
 
 Pour commencer à développer notre projet, dans le répertoire `tp1` nous allons créer un répertoire `src` qui contiendra les sources dudit projet dans lequel nous allons créer un premier fichier java vide à l'aide de la commande `touch Cryptomonnaie.java`. La structure du répertoire `tp1` doit être la suivante :
 
@@ -283,18 +283,18 @@ $:~/courseGIT/tp1> tree
 De manière simplifiée, les principaux attributs d'une crypto-monnaie sont le nom et la valeur actuelle de son jeton (_token_). Editez le fichier Cryptomonnaie.java avec le code suivant :
 
 ```java
-public class Cryptomonnaie{
+public class Cryptomonnaie {
     private String nom;
     private double valeurDeJeton; // Imaginons en euros
 
-    public Cryptomonnaie(String nom, double valeurDeJeton){
+    public Cryptomonnaie(String nom, double valeurDeJeton) {
         this.nom = nom;
         this.valeurDeJeton = valeurDeJeton;
     }
 }
 ```
 
-À l'aide des commandes git que nous avons apprises, ajoutez et validez le fichier java au dépôt git avec le message `"Première version du fichier Cyptomonnaie.java"`.
+À l'aide des commandes git que nous avons apprises, ajoutez et validez le fichier java au dépôt git avec le message `"Première version du fichier Cryptomonnaie.java"`.
  
 Maintenant, la commande `git log` devrait afficher des informations similaires à ce qui suit :
 
@@ -304,7 +304,7 @@ commit e6612def94728cfcb8468e5430edec6b983e5a58
 Author: author <author@example.com>
 Date:   Thu Apr 29 14:22:12 2021 +0200
 
-    Première version du fichier Cyptomonnaie.java
+    Première version du fichier Cryptomonnaie.java
 
 commit 23782d55677ffc4a6ad97adc45c484e9b93671a6
 Author: author <author@example.com>
