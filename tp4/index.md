@@ -19,12 +19,20 @@
 # TP 4 : Résolution de conflits  et pull request 
 [Retour à la page principale](../index.md)
 
+---
+
+## Travail à mettre dans `dossier_exam/SAE-2-3/TP4`
+
+>1. l'ensemble des fichiers du répertoire tp4 (pas le répertoire .git !)
+>2. ainsi qu'un PDF avec des captures d'écran des commandes utilisées
 
 ---
 
 ## Objectifs du TP 4
 
-L'objectif de ce TP est double. D'une part, lorsque plusieurs personnes interagissent avec un référentiel Git, des conflits peuvent survenir, c'est-à-dire problèmes d'intégration des changements produits par plusieurs utilisateurs. Le premier objectif de ce TP est **i) d'apprendre comment nous pouvons résoudre des conflits**. D'autre part, **ii) nous allons apprendre à utiliser l'option `pull request`**. Cette option n'est pas standard dans git, mais une fonctionnalité ajoutée par différentes plates-formes telles que github. Les `pull request` sont couramment utilisées par les équipes qui collaborent dans un référentiel partagé, où tout le monde partage un référentiel unique et les branches thématiques sont utilisées pour développer des fonctionnalités et isoler les modifications.
+L'objectif de ce TP est double. D'une part, lorsque plusieurs personnes interagissent avec un référentiel Git, des conflits peuvent survenir, c'est-à-dire problèmes d'intégration des changements produits par plusieurs utilisateurs. Les deux objectifs de ce TP est :
+1) **d'apprendre comment nous pouvons résoudre des conflits**
+2) **nous allons apprendre à utiliser l'option `pull request`**. Cette option n'est pas standard dans git, mais une fonctionnalité ajoutée par différentes plates-formes telles que github. Les `pull request` sont couramment utilisées par les équipes qui collaborent dans un référentiel partagé, où tout le monde partage un référentiel unique et les branches thématiques sont utilisées pour développer des fonctionnalités et isoler les modifications.
 
 >1. [Créer un conflit](#pull-request)
 2. [Résoudre un conflit](#conflit)
@@ -58,11 +66,11 @@ Dans la plupart des cas, git est capable de mélanger les modifications que diff
 - Chacun va faire un clone du repositoire et corriger sa faute de frappe localement, puis essayer de faire un `push` du changement. 
 
 ```
-- Invitez votre collègue au projet en github. Chacun va faire un clone du repositoire et corriger sa faute de frappe localement (n'oubliez de faire un `commit` des changements), puis essayer de faire un `push` pour synchroniser les modifications avec le dêpòt distant . 
+- Invitez votre collègue au projet en github. Chacun va faire un clone du repositoire et corriger sa faute de frappe localement (n'oubliez de faire un `commit` des changements), puis essayer de faire un `push` pour synchroniser les modifications avec le dépôt distant . 
 
 - Pour forcer le conflit, ne corrigez pas les erreurs dans le fichier tant que vous n'avez pas tous les deux cloné le référentiel. 
 
-- Imaginons que c'est <mark style="background-color:green;font-weight:bold; color:white">Porthos</mark> le premier à corriger le fichier **README.md** et faire un `push` des modifications (éventuellement, cela fonctionnerait aussi dans l'autre sens, si Athos est le premier à faire le `push`).
+- Imaginons que c'est <mark style="background-color:green;font-weight:bold; color:white">Porthos</mark> qui est le premier à corriger le fichier **README.md** et qui fait un `push` des modifications (éventuellement, cela fonctionnerait aussi dans l'autre sens, si Athos est le premier à faire le `push`).
 
 - Empêchez surtout <mark style="background-color:red;font-weight:bold; color:white">Athos</mark> de faire un `pull`. Cela synchroniserait les répertoires et nous ne produirions pas de conflit. 
 
@@ -149,16 +157,16 @@ $ git push
 -----
 
 <a id='pullrequest'></a>
-## 3. Un exemple simple de pull request   
+## 3. Un exemple simple de `pull request`   
 
-Comme nous l'avons mentionné au début de ce TP, _un pull request_ n'est pas standard dans git, mais une fonctionnalité ajoutée par différentes plateformes comme github. Cependant, cette façon de travailler est devenue un standard de facto dans le développement d'applications open source. L'idée principale est de proposer un mécanisme par lequel nous pouvons proposer des modifications à un référentiel même sans en être les développeurs ou les propriétaires. 
+Comme nous l'avons mentionné au début de ce TP, un `pull request` n'est pas standard dans git, mais une fonctionnalité ajoutée par différentes plateformes comme github. Cependant, cette façon de travailler est devenue un standard de facto dans le développement d'applications open source. L'idée principale est de proposer un mécanisme par lequel nous pouvons proposer des modifications à un référentiel même sans en être les développeurs ou les propriétaires. 
 
-En quelques mots, une pull request consiste à faire une copie d'un réferentiel sur notre compte, à créer une branche pour apporter des modifications et à notifier le propriétaire du réferentiel d'origin afin qu'il accepte les changements que nous proposons. 
+En quelques mots, une `pull request` consiste à faire une copie d'un réferentiel sur notre compte, à créer une branche pour apporter des modifications et à notifier au propriétaire du référentiel d'origine afin qu'il accepte les changements que nous proposons. 
 
-Nous vous proposons ici un exercice pour faire une pull request. 
- 
+Nous vous proposons ici un exercice pour faire une `pull request`. 
+
 ### Exercice
->1. Allez sur [ce site](https://github.com/juanluck/test-pull-request-2022) et faites une `pull request` en suivant les instructions décrites dans le fichier **README.md**  
+>1. Allez sur [ce site](https://github.com/brunuLEGRIX/test-pull-request-2026) et faites une `pull request` en suivant les instructions décrites dans le fichier **README.md**  
 
 [Haut de la page](#TP4)
 
