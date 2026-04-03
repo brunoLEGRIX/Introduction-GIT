@@ -166,7 +166,7 @@ En quelques mots, une `pull request` consiste à faire une copie d'un réferenti
 Nous vous proposons ici un exercice pour faire une `pull request`. 
 
 ### Exercice
->1. Allez sur [ce site](https://github.com/brunuLEGRIX/test-pull-request-2026) et faites une `pull request` en suivant les instructions décrites dans le fichier **README.md**  
+>1. Allez sur [ce site](https://github.com/brunoLEGRIX/test-pull-request-2026) et faites une `pull request` en suivant les instructions décrites dans le fichier **README.md**  
 
 [Haut de la page](#TP4)
 
