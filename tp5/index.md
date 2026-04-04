@@ -35,8 +35,8 @@ img[alt=drawing] { width: 200px; }
 Avec les [pages Github](https://pages.github.com/), GitHub vous permet d'héberger une page Web à partir d'un référentiel. Dans ce TP, nous allons apprendre à :
 
 >1. [Créer un site Web pour un référentiel](#creation-web)
-2. [Ajouter du contenu à l'aide de Markdown et HTML](#markdown)
-3. [Créer un site Web pour la SAÉ 2.03](#sae)
+>2. [Ajouter du contenu à l'aide de Markdown et HTML](#markdown)
+>3. [Créer un site Web pour la SAÉ 2.03](#sae)
 
 [Haut de la page](#TP5)
 
