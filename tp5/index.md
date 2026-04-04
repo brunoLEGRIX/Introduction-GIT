@@ -21,6 +21,12 @@ img[alt=drawing] { width: 200px; }
 # TP 5 : Comment créer un site Web sur GitHub pages
 [Retour à la page principale](../index.md)
 
+---
+
+## Travail à mettre dans `dossier_exam/SAE-2-3/TP5`
+
+>1. l'ensemble des fichiers du répertoire tp5 (pas le répertoire .git !)
+>2. ainsi qu'un PDF avec des captures d'écran des commandes utilisées
 
 ---
 
@@ -30,9 +36,7 @@ Avec les [pages Github](https://pages.github.com/), GitHub vous permet d'héberg
 
 >1. [Créer un site Web pour un référentiel](#creation-web)
 2. [Ajouter du contenu à l'aide de Markdown et HTML](#markdown)
-3. [Créer un site Web pour la SAE 2.03](#sae)
-
-   
+3. [Créer un site Web pour la SAÉ 2.03](#sae)
 
 [Haut de la page](#TP5)
 
@@ -41,7 +45,7 @@ Avec les [pages Github](https://pages.github.com/), GitHub vous permet d'héberg
 <a id='creation-web'></a>
 ## 1. Créer un site Web pour un référentiel existant 
 
-Parmi de nombreuses autres fonctionnalités, github vous permet d'héberger des sites Web dans l'extension github.io. Ce même cours en est un exemple : le site [https://abderzah.github.io/Introduction-GIT](https://abderzah.github.io/Introduction-GIT) n'est rien de plus qu'un dépôt github rendu public sous la forme d'un site web.
+Parmi les nombreuses autres fonctionnalités, github vous permet d'héberger des sites Web dans l'extension github.io. Ce cours en est un exemple : le site [https://brunoLEGRIX.github.io/Introduction-GIT](https://brunoLEGRIX.github.io/Introduction-GIT) n'est rien de plus qu'un dépôt github rendu public sous la forme d'un site web.
 
 Il existe de nombreuses raisons pour lesquelles nous pourrions souhaiter avoir un site Web hébergé sur github : l'hébergeur est gratuit, la plate-forme est bien connue et elle peut même être utilisée comme site Web personnel. De plus, la mise à jour du contenu et le workflow se fait facilement grâce aux commandes que l'on connait déjà : il suffit de cloner un référentiel, de modifier localement le contenu souhaité, de le valider (```git commit```) et de  mettre à jour le site (```git push```). Ne vous inquiétez pas, nous verrons cela étape par étape.
 
@@ -63,7 +67,7 @@ Dans cette section, nous allons créer une page Web associée à un référentie
 
 ![a](./images/index.png)
 
-- Quelque chose d'intéressant qui vient de se passer est que le référentiel a maintenant deux branches, la branche ```gh-pages``` (où nous aurons le contenu Web) et la branche principale ```main``` (où nous continuons à avoir notre code):
+- Quelque chose d'intéressant qui vient de se passer est que le référentiel a maintenant deux branches, la branche ```gh-pages``` (où nous aurons le contenu Web) et la branche principale ```main``` (où nous continuons à avoir notre code) :
 
 ![a](./images/branches.png)
 
@@ -90,13 +94,13 @@ Dans cette section, nous allons créer une page Web associée à un référentie
 <a id='markdown'></a>
 ## 2. Ajouter du contenu à l'aide de Markdown et HTML 
 
-Vous venez de créer une page web dépourvue de contenu. Dans cette section, nous vous invitons à vous familiariser avec les outils de [markdown](https://www.markdownguide.org) et [html](https://www.w3schools.com/tags/default.asp) pour savoir comment ajouter un tel contenu. Soyez libre, cet exercice n'est pas évalué, il s'agit simplement de jouer et de vous familiariser avec l'environnement.
+Vous venez de créer une page web dépourvue de contenu. Dans cette section, nous vous invitons à vous familiariser avec les outils de [markdown](https://www.markdownguide.org) et [html](https://www.w3schools.com/tags/default.asp) pour savoir comment ajouter un tel contenu.
 
 ### Flux de travail
 
 Les [pages Github](https://pages.github.com/) vous permettent de traiter les mises à jour de sites Web comme s'il s'agissait simplement d'un autre référentiel. Après avoir créé le site Web (voir section précédente), vous devez avoir une copie local du référentiel (par exemple à travers de la commande ```git clone ...```). 
 
-Ce qui est intéressant avec les pages github, c'est que le contenu web est traité dans une branche appelée ```gh-pages```. Cela nous permet de différencier le contenu web (qui sera traité dans la branche ```gh-pages```) de la partie du code du répositoire (qui sera normalement dans la branche principale ```main```).
+Ce qui est intéressant avec les pages github, c'est que le contenu web est traité dans une branche appelée ```gh-pages```. Cela nous permet de différencier le contenu web (qui sera traité dans la branche ```gh-pages```) de la partie du code du dépôt (qui sera normalement dans la branche principale ```main```).
 
 Pour vous assurer que nous modifions le contenu Web, accédez à votre référentiel local et tapez :
 
@@ -115,7 +119,7 @@ Désormais, toutes les modifications que vous apporterez au fichier ```index.md`
 
 ### Exemples 
 
-Rien n'empêche tout type de contenu dans cet exercice. Ci-dessous, nous vous montrons quelques exemples. Certains d'entre eux sont insérés grâce au markdown et d'autres grâce au html. Essayez de les reproduire mais n'en restez pas là. Explorez des differents possibilités.
+Rien n'empêche tout type de contenu dans cet exercice. Ci-dessous, nous vous montrons quelques exemples. Certains d'entre eux sont insérés grâce au markdown et d'autres grâce au html. Essayez de les reproduire mais n'en restez pas là. Explorez les differents possibilités.
 
 - **Accès à une page web interne**
 
@@ -135,7 +139,7 @@ Rien n'empêche tout type de contenu dans cet exercice. Ci-dessous, nous vous mo
 
 - **Insertion d'un tableau**
 
-| Item         | Pris | Stock |
+| Item         | Prix | Stock |
 |--------------|:-----:|-----------:|
 | Pommes |  1.99 |        739 |
 | Bananas      |  1.89 |          6 |
@@ -157,11 +161,11 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
 -----
 
 <a id='sae'></a>
-## 3. Créer un site Web pour la SAE 2.03  
+## 3. Créer un site Web pour la SAÉ 2.03  
 
-La [SAE 2.03](https://di.iut.univ-lehavre.fr/pedago/info1/SAE_2_03/index.xml) porte sur l'installation de services réseaux. En particulier, dans ce SAE, nous apprendrons comment installer ces services avec docker : une plate-forme qui utilisent la virtualisation au niveau du système d'exploitation pour fournir des logiciels dans des packages appelés conteneurs. Pour le moment, nous n'avons pas besoin d'entrer dans les détails. Nous verrons comment docker fonctionne plus tard.
+La [SAÉ 2.03](https://di.iut.univ-lehavre.fr/pedago/info1/SAE_2_03/index.xml) porte sur l'installation de services réseaux. En particulier, dans cette SAÉ, nous apprendrons comment installer ces services avec docker : une plate-forme qui utilisent la virtualisation au niveau du système d'exploitation pour fournir des logiciels dans des packages appelés conteneurs. Pour le moment, nous n'avons pas besoin d'entrer dans les détails. Nous verrons comment docker fonctionne plus tard.
 
-Ce qu'il faut savoir c'est qu'on va faire **le compte-rendu de ce SAE en utilisant les pages github**. Cette section est destinée à créer un site Web que nous devrons compléter au fur et à mesure de notre progression dans la SAE.
+Ce qu'il faut savoir c'est qu'on va faire **le compte-rendu de cette SAÉ en utilisant les pages github**. Cette section est destinée à créer un site Web que nous devrons compléter au fur et à mesure de notre progression dans la SAÉ.
 
 ### Préliminaires à lire attentivement
 
@@ -171,32 +175,11 @@ Ce qu'il faut savoir c'est qu'on va faire **le compte-rendu de ce SAE en utilisa
 	<p>
 	Avant de commencer à créer le site Web, vous trouverez ci-dessous certains éléments à prendre en compte pour la <b>SAE 2.03 </b>:
 	</p>
-
 	<ul>
-		<li> <h3>Évaluation de la SAE</h3></li>
-		<ul>
-			<li> Le SAE consistera en un travail d'équipe.</li>
-			<li><b>Travail se fera en équipe :</b></li>
-			<ul>
-					<li>La plupart du temps à la SAE vous allez travailler en équipe. Pour la création du site Web, vous devez avoir l'équipe déjà formée.</li>
-					<li>Le travail consistera à réaliser un projet avec différents types d'exercices en docker. Les résultats seront livrés sur github (lors de la SAE on vous expliquera comment faire). </li>
-					<li> Le compte-rendu du projet se fera par le site web que nous allons commencer à créer dans cette rubrique.</li>
-			</ul>
-			
-
-		</ul>
+		<li>La plupart du temps à la SAÉ vous allez travailler en équipe. </li>
+		<li>Le travail consistera à réaliser un projet avec différents types d'exercices avec docker. Les résultats seront livrés sur github (lors de la SAÉ, on vous expliquera comment faire). </li>
+		<li>Le compte-rendu du projet se fera par le site web que nous allons commencer à créer dans cette rubrique.</li>
 	</ul>
-
-	<ul>
-		<li> <h3>Organisation des équipes</h3></li>
-		<ul>
-			<li> C'est à vous de vous organiser en équipes.</li>
-			<li> Pour la SAE vous allez vous organiser en équipes de minimum 3 personnes et maximum 4.</li>
-			<li>Le non respect du nombre de membres de l'équipe entraîne une pénalité dans le grade.</li>
-			<li> Pour la réalisation du site web sur github, l'équipe doit être organisée.</li>
-		</ul>
-	</ul>
-
 </div>
 
 ### Création du site web
@@ -205,6 +188,7 @@ Ce qu'il faut savoir c'est qu'on va faire **le compte-rendu de ce SAE en utilisa
 > 1. En suivant les étapes décrites dans ce TP, nous allons créer un nouveau référentiel que nous appellerons ```docker-sae203```
 2. L'un des membres de l'équipe créera le référentiel et invitera les autres membres au projet. Le document sera géré par tous les membres de l'équipe.
 3. **Attention :** sauf si vous avez un compte premium sur github, le dépôt doit être public pour pouvoir publier le site.
+4. Faites un site qui résume les différentes commandes vu sur l'ensemble des 5 TP. Vous pouvez reprendre des éléments des différents comptes-rendus.
 
 Ce TP se termine ici. Bien que vous ne pouvez pas encore fournir de contenu au site Web (c'est-à-dire que vous n'avez pas commencé avec docker), vous pouvez déjà commencer à travailler sur la structure et la forme du document. Privilégier le travail sur différents fichiers pour éviter les conflits.
 
