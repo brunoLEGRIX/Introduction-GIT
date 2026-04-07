@@ -33,7 +33,8 @@ Pour vérifier les paramètres de configuration actuels de git sur votre machine
 ```shell
 $:> git config --list
 ```
-ce qui devrait afficher des informations similaires à ce qui suit :
+La première fois, comme ce n'est pas encore configuré, celle commande affiche rien. Mais par la suite,
+ça devrait afficher des informations similaires à ce qui suit :
 
 ```shell
 user.name=...
